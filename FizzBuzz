@@ -11,16 +11,14 @@ int main (void)
     
     for(count=1;count<101;count++)
     {
-        if (((count % 3)||(count % 5)==0)
+        if (count % 15 == 0)
             printf("FizzBuzz\n");
-        else 
-        if ((count % 3) == 0)
+        else if (count % 3 == 0)
             printf("Fizz\n");
-        else 
-        if ((count % 5) == 0)
+        else if (count % 5 == 0)
             printf("Buzz\n");
         else   
-      printf("%d\n",count);
+            printf("%d\n",count);
     }
      
 return 0;     
